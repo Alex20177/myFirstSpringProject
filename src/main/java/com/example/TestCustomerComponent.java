@@ -7,6 +7,9 @@ public class TestCustomerComponent {
 
 	public static void main(String[] args) {
 
+		//add new line
+		int i=0;
+		//add new line
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
 		Customer_Component cc = (Customer_Component) context.getBean("customer_Component");
 		System.out.println(cc.getCust_address().getCity_name()+"\t"+cc.getCust_address().getBuild_no()+"\t"+cc.getCust_id()+"\t"+cc.getCust_name());
